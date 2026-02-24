@@ -1,10 +1,13 @@
 import java.util.Scanner;
 public class Calculation {
+    // a ideia desse codigo é pegar as notas do semestre do corno em questao
+    // e definir se ele vai ou nao passar usando if else e o Scanner
     String nome;
     double nota1;
     double nota2;
     double nota3;
     int res;
+    // decidi usar o double pro caso de usar como faculdade e dar a nota quebrada
     public static void main(String[] args){
         Scanner Calculon = new Scanner(System.in);
 
