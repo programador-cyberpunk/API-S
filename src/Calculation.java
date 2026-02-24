@@ -6,13 +6,13 @@ public class Calculation {
     double nota1;
     double nota2;
     double nota3;
-    int res;
+    double media;
     // decidi usar o double pro caso de usar como faculdade e dar a nota quebrada
     public static void main(String[] args){
         Scanner Calculon = new Scanner(System.in);
 
         //pegando as notas e o nome
-       System.out.print("Digite um teu nomne maconheiro: ");
+       System.out.print("Digite um teu nome maconheiro: ");
         String nome = Calculon.nextLine();
 
        System.out.print("Digite um nota 1: ");
@@ -21,15 +21,15 @@ public class Calculation {
        double nota2 = Calculon.nextDouble();
        System.out.print("Digite um nota 3: ");
        double nota3 = Calculon.nextDouble();
+       double media = (nota1 + nota2 + nota3) / 3;
 
-       Calculation calc = new Calculation(int res = nota1 + nota2 + nota3);
-        if(int res =>7){
-            System.out.print("Parabens seu corno, vc passou....");
-            int res = Calculon.nextLine();
-        }else if(res == 7){
-            System.out.print("Passou seu corno, mas fica de olho");
+        System.out.print("Resultado de "+nome+": "+media);
+
+        //logica do if
+        if(media>7){
+
         }else{
-            System.out.print("Se fudeu, estude mais no proximo semestre corninho");
+            System.out.println("Se fudeu, estude mais no proximo semestre!");
         }
        }
     }
