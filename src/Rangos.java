@@ -1,27 +1,33 @@
-public class Rangos {
 
-    public class Salgado{
-        void CalculaPreco():
+class Salgado extends ItemVenda {
+    String massa, recheio, assado;
 
-    String massa;
-    String recheio;
-    String assado;
+    public Salgado(String nome, double preco, String validade, double peso) {
+        super(nome, preco, dataValidade, peso);
+    }
 
-    };
+    @Override
+    public double getPreco() { return this.precoVenda; }
+}
 
-    public class Pizza{
-        void CalculaPreco()
+class Pizza extends ItemVenda {
+    String molho, recheio, borda;
 
-        String molho;
-        String recheio;
-        String borda;
-    };
+    public Pizza(String nome, double preco, Date dataValidade, double peso) {
+        super(nome, preco, dataValidade, peso);
+    }
 
-    public class Lanche{
-        void CalculaPreco():
+    @Override
+    public double getPreco() { return this.precoVenda; }
+}
 
-        String pao;
-        String recheio;
-        String molho;
-    };
+class Lanche extends ItemVenda {
+    String pao, recheio, molho;
+
+    public Lanche(String nome, double preco, String validade, double peso) {
+        super(nome, preco, validade, peso);
+    }
+
+    @Override
+    public double getPreco() { return this.precoVenda; }
 }
