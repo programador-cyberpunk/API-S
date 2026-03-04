@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Pedidos {
     String nomeCliente;
-    double taxaServico = 0.10; // 10% de taxa
+    double taxaServico = 0.10;
 
     ArrayList<ItemVenda> itensConsumidos = new ArrayList<>();
     public Pedidos(String nome) {
@@ -13,7 +13,7 @@ public class Pedidos {
         double totalItens = 0;
 
         for (ItemVenda item : itensConsumidos) {
-            totalItens += item.getPreco(); // Chama o getPreco polimórfico
+            totalItens += item.getPreco();
         }
 
         return totalItens + (totalItens * taxaServico);

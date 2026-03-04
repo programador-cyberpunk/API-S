@@ -14,10 +14,10 @@ class PagamentoDinheiro implements Pagamento {
     public void realizarPagamento(double valorTotal) {
         if (this.valorRecebido >= valorTotal) {
             double troco = this.valorRecebido - valorTotal;
-            System.out.println("Pagamento realizado com sucesso!");
-            System.out.printf("Troco a entregar: R$ %.2f\n", troco);
+            System.out.println("Pagamento em grana realizado");
+            System.out.printf("Troco: R$ %.2f\n", troco);
         } else {
-            System.out.println("Erro: Dinheiro insuficiente para pagar a conta.");
+            System.out.println("Erro: Dinheiro insuficiente para pagar a conta,seu fudido.");
         }
     }
 }

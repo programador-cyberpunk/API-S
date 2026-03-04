@@ -3,10 +3,10 @@ import java.util.Date;
 public abstract class ItemVenda {
     protected String nome;
     protected double precoVenda;
-    protected Date dataValidade;
+    protected String dataValidade;
     protected double peso;
 
-    public ItemVenda(String nome, double precoVenda, Date dataValidade, double peso) {
+    public ItemVenda(String nome, double precoVenda, String dataValidade, double peso) {
         this.nome = nome;
         this.precoVenda = precoVenda;
         this.dataValidade = dataValidade;
