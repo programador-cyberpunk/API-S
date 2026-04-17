@@ -1,0 +1,10 @@
+ //exercicio1
+    @GetMapping("{/api/contacts/search}")
+    public Contato getContactByName(@PathVariable String nome) {
+        return contatosRepositorio.findbyName(nome);
+        Contato contatoAchado = contatosRepositorio.findByName(nome)// isso aqui não é corrigido por caralho nenhum nesse mundo
+                .orElseThrow(() -> {
+                    System.out.println("Nao achamo ninguem nessa merda: " + nome);
+                    return new RuntimeException("Nao achamo ninguem nessa merda" + nome);
+                });
+    }

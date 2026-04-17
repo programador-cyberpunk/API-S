@@ -1,0 +1,4 @@
+br\ifsp\contactos_api\controller\ContatoController.class
+br\ifsp\contactos_api\repository\ContatoRepository.class
+br\ifsp\contactos_api\ContactosApiApplication.class
+br\ifsp\contactos_api\model\Contato.class
